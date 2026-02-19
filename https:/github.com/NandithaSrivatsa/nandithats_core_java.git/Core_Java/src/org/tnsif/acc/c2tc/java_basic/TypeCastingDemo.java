@@ -1,4 +1,4 @@
-package java_basic;
+package org.tnsif.acc.c2tc.java_basic;
 
 public class TypeCastingDemo {
 
