@@ -3,13 +3,13 @@ package org.tnsif.acc.c2tc.collections;
 import java.util.ArrayList;
 import java.util.Collections;
 
-class Person6 implements Comparable<Person6>
+class Person implements Comparable<Person>
 {
 	String name;
 	int age;
 	
 	
-	Person6(String name ,int age)
+	Person(String name ,int age)
 	{
 		this.name=name;
 		this.age=age;
@@ -24,7 +24,7 @@ class Person6 implements Comparable<Person6>
 	
 	//sort by name
 	
-	public int compareTo(Person6 other) {
+	public int compareTo(Person other) {
 		
 		return this.name.compareTo(other.name);
 	}
@@ -36,15 +36,15 @@ public class ComparableDemo {
 
 	public static void main(String[] args) {
 		
-		ArrayList<Person6> people=new ArrayList<>();
-		people.add(new Person6("John",30));
-		people.add(new Person6("Anil",20));
-		people.add(new Person6("Baskar",17));
-		people.add(new Person6("Nandu",21));
+		ArrayList<Person> people=new ArrayList<>();
+		people.add(new Person("John",30));
+		people.add(new Person("Anil",20));
+		people.add(new Person("Baskar",17));
+		people.add(new Person("Nandu",21));
 		
 		Collections.sort(people);
 		
-		for(Person6 person:people)
+		for(Person person:people)
 		{
 			person.displayinfo();
 		}
